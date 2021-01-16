@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru,en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <style>body{font-family: 'Chakra Petch', sans-serif;};
+           input{font-family: 'Chakra Petch', sans-serif;};
+    </style>
+</head>
+<body>
+<!-- 1 task -->
+<div class="hw1">
+    <h2>calculator :</h2>
+    <input id="numb1"  onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЁё-і]/, '');"/>
+    <select id="act">
+        <option value="plus">+</option>
+        <option value="min">-</option>
+        <option value="multiply">x</option>
+        <option value="division">/</option>
+    </select>
+    <input id="numb2"  onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЁё-і]/, '');"/>
+    <button onclick="calc()">=</button>
+    <p id="result">00.00</p>
+</div>
+<!-- 2 task -->
+<div class="hw2">
+    <h2>array :</h2><h2 id="mass"></h2>
+    <p>add to array</p>
+    <input id="pushInp"/>
+    <button onclick="gets()">add</button>
+    <p>remove from array</p>
+    <input id="setNumb"/>
+    <button onclick="sets()">dell</button>
+</div>
+<!-- 3 task -->
+<div class="hw3">
+    <h2>calculator :</h2>
+    <input id="number" onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЁё-і]/, '');"/>
+    <button onclick="proCalc()">=</button>
+    <p id="resultat">00.00</p>
+</div>
+    <script src="../HwJs1/js/script.js"></script>
+</body>
+</html>
